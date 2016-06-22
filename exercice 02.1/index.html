@@ -5,6 +5,17 @@
     <title>Exercice 1</title>
   </head>
   <body>
-      <img src="images/image1.jpg" id="image1" />
+      <img onmouseover="sndImg(this)" onmouseout="normalImg(this)" src="images/image1.jpg" id="image1" />
+
+      <script type="text/javascript">
+      		function sndImg(x) {
+    			x.src="images/image1_2.jpg";
+			}
+			function normalImg(x) {
+			    x.src="images/image1.jpg";
+			}
+
+      </script>
+
   </body>
 </html>
